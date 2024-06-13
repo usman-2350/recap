@@ -109,8 +109,8 @@ const Home = () => {
 
                 </div>
                 <div className='fixed top-[250px] left-[500px] z-10'>
-                    <h1 className='text-white text-center text-[24px] goonies' style={{ fontFamily: 'Abuget, sans-serif' }}>the story of</h1>
-                    <img className='w-[428px] goonies' src={goonies} alt="" />
+                    <h1 className={`text-white text-center text-[24px] transform transition-all duration-[3000ms] ${scrollY >= 5 & scrollY <= 50 && "opacity-40"} ${scrollY >= 51 && "opacity-0"}`} style={{ fontFamily: 'Abuget, sans-serif' }}>the story of</h1>
+                    <img className={`w-[428px] transform transition-all duration-[3000ms]  ${scrollY >= 5 & scrollY <= 50 && "opacity-40"} ${scrollY >= 51 && "opacity-0"}`} src={goonies} alt="" />
                 </div>
 
                 <div className='fixed bottom-10 grid grid-cols-3 w-full items-center justify-items-center gap-[150px] mt-10'>
