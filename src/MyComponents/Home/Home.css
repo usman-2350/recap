@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin-top: 0;
+}
+
+.backfront{
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain;
+    animation-range-end: contain;
+}
+@keyframes fade-in{
+    from{scale: 1; opacity: 1;}
+    to{scale:1.5; opacity: 1;}
+}
+
+@keyframes fade {
+    from {   scale :1; opacity: 2;  }
+    to {  scale:1.3; opacity: 0;}
+  }
+  
+  .goonies {
+  
+    animation: fade linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain;
+    animation-range-end: contain;
+  }
+
+  /* @keyframes fade-in-out{
+    from{opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .fade-in-out{
+    animation: fadeIn 2s ease-in-out;
+  } */
